@@ -27,7 +27,7 @@ export default {
   <ul id="slide-out" class="sidenav">
     <li class="mb-24">
       <div class="user-view">
-        <img src="src/img/logo-sesi-vida.webp" alt="logo-sesi-vida" />
+        <img src="src/img/logo-sesi-vida.webp" alt="logo-sesi-vida" style="max-width: 120px;"/>
         <p class=" blue-deep-text">Segurança e saúde no trabalho</p>
         <h2 class="sidenav__specific-title">
         A importância da NR 7 para a saúde e segurança do trabalhador

@@ -47,21 +47,21 @@ h2 {
 
   font-style: italic;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 120%;
 }
 h3 {
   font-size: $h3-fontsize;
 
   font-style: italic;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 120%;
 }
 h4 {
   font-size: $h4-fontsize;
 
   font-style: italic;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 110%;
   letter-spacing: 0.005em;
 }
 h5 {
@@ -89,20 +89,8 @@ h5 {
   font-weight: 500;
 }
 
-// @media #{$small-and-down} {
-//   .display1 {
-//     font-size: 3.875rem;
-//   }
-//   h1 {
-//     font-size: 3rem;
-//   }
-//   h2 {
-//     font-size: 2.6rem;
-//   }
-//   h3 {
-//     font-size: 2rem;
-//   }
-// }
+
+
 
 p {
   line-height: 150%;
@@ -110,7 +98,7 @@ p {
   font-weight: 300;
 
   font-weight: 300;
-  line-height: 21px;
+  line-height: 125%;
   letter-spacing: 0.01em;
 }
 
@@ -118,18 +106,18 @@ p {
   font-size: $display1-fontsize;
   font-style: italic;
   font-weight: 600;
-  line-height: 61px;
+  line-height: 110%;
   letter-spacing: 0.0025em;
 }
 .display2 {
   font-size: $display2-fontsize;
   font-weight: 600;
-  line-height: 52px;
+  line-height: 120%;
 }
 .body2 {
   font-size: $body2-fontsize;
 
   font-weight: 300;
-  line-height: 25px;
+  line-height: 110%;
   letter-spacing: 0.0125em;
 }

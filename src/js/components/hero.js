@@ -40,7 +40,7 @@ export default {
     <img
       v-if="showImg"
       class="mobile-hero"
-      src="../../src/img/aula/Hero-s.webp"
+      src="./src/img/aula/Hero-s.webp"
       alt="Hero"
     />
   </div>

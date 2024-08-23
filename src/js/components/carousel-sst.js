@@ -139,20 +139,31 @@ export default {
       shift: 20,
       numVisible: 1,
       onCycleTo: (slide) => {
-        // this.qtdSlides = slide.parentNode.querySelectorAll(".carousel-item").length;
+        this.carousel.qtdSlides = slide.parentNode.querySelectorAll(".carousel-item").length;
 
         // Lógica para saber o slide atual
         let search = slide.parentNode;
         let slideIndex = [...search.children].indexOf(slide);
         this.carousel.ordem = slideIndex;
         this.carousel.ordemAnterior = this.ordem - 1;
+       
+
 
         // Se for o primeiro slide, não mostrar o botão anterior
         if (this.carousel.ordem == 1) {
           this.carousel.elemento.querySelector(".previous").style.display =
             "none";
-        } else {
+            this.carousel.elemento.querySelector(".next").style.display =
+            "flex";
+        } else if (this.carousel.qtdSlides == this.carousel.ordem){
           this.carousel.elemento.querySelector(".previous").style.display =
+            "flex";
+          this.carousel.elemento.querySelector(".next").style.display =
+          "none";
+        }else {
+          this.carousel.elemento.querySelector(".previous").style.display =
+            "flex";
+            this.carousel.elemento.querySelector(".next").style.display =
             "flex";
         }
       },
@@ -182,7 +193,7 @@ export default {
       <!-- slides -->
       <!-- item -->
       <div v-for="item in items" :key="item.id" class="carousel-item  white-text center-align">
-        <img :src="item.img" :alt="item.alt">
+        <img :src="item.img" :alt="item.alt" loading="lazy">
         <div class="gradient"></div>
         <div class="text center-align" v-html="item.html"></div>
       </div>

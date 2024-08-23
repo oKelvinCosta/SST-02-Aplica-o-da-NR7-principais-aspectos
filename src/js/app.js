@@ -8,10 +8,8 @@ import CarouselSst from "./components/carousel-sst.js";
 import Sidebar from "./components/sidebar.js";
 import Navbar from "./components/navbar.js";
 import Hero from "./components/hero.js";
-// import ImgSideCard from "./components/img-side-card.js";
 import AppFooter from "./components/app-footer.js";
 import Concluir from "./components/concluir.js";
-import Questions from "./components/questions.js";
 
 const app = createApp({
   components: {
@@ -20,8 +18,7 @@ const app = createApp({
     Hero,
     AppFooter,
     Concluir,
-    Questions,
-    CarouselSst
+    CarouselSst,
   },
 
   // Quando o componente estiver montado, executa o código
@@ -40,6 +37,17 @@ const app = createApp({
    * @return {void} Esta função não retorna um valor.
    */
   mounted() {
+    /**
+     * Oculta o elemento com id "loading" e exibe o elemento com id "content"
+     * quando a página está totalmente carregada.
+     *
+     * @return {void} Esta função não retorna um valor.
+     */
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("content").style.opacity = "1";
+    
+    
+
     // scrollspy -----------------------------------------------------
     // Para a ancoragem de links de funcionar de modo animado
     var elems = document.querySelectorAll(".scrollspy");
@@ -56,12 +64,12 @@ const app = createApp({
       delay: 50,
     });
 
-
     // Colapsible
     var elems = document.querySelectorAll(".collapsible");
     var Collapsible = M.Collapsible.init(elems, {
       // specify options here
     });
+
   },
   methods: {
     // Barra de progresso Scroll -----------------------------------------------------

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/xqh7gyj.css" />
 
     <!--Import Google Icon Font-->
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
@@ -46,6 +47,7 @@
     <script src="src/js/scorm/scorm-app.js" defer></script>
 
     <link rel="preload" href="src/img/aula/Hero-s.webp" as="image" />
+    <link rel="preload" href="src/img/aula/Hero.webp" as="image" />
 
     <!-- Materialize JS -->
     <script
@@ -53,6 +55,7 @@
       src="src/js/bin/materialize.js"
       defer
     ></script>
+
     <!-- AOS JS -->
     <script
       type="text/javascript"
@@ -64,496 +67,488 @@
     <script type="module" src="src/js/app.js"></script>
 
     <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+
   </head>
 
   <body>
     <div id="app">
-      <!-- Sidebar ---------------------------------- -->
-      <sidebar></sidebar>
-
-      <!-- Navbar ---------------------------------- -->
-      <navbar></navbar>
-
-      <!-- Hero Banner ---------------------------------- -->
-      <hero>A importância da NR 7 para a saúde e segurança do trabalhador</hero>
-      <div style="height: 24px; width: 100%; background-color: #57bdbc"></div>
-
-      <!-- introduçao ------------------------------------>
-      <div id="introducao" class="scrollspy py-144 py-80-mobile bg-blue-light">
-        <div class="container">
-          <div class="row">
-            <div class="col l6"></div>
-            <div class="col l6 s12">
-              <h1 class="blue-deep-text mb-32" data-aos="fade-up">Introdução</h1>
-              <div class="white-text">
-                <h3>
-                  É importante que você compreenda os impactos da Norma
-                  Regulamentadora nº 7 (NR 7) no seu dia a dia, porque ela busca
-                  preservar a sua saúde e a sua integridade física e mental. 
-                </h3>
-                <p class="body2">
-                  Ao aprender sobre ela, você poderá compartilhar sua
-                  importância com os demais colegas de trabalho e proporcionar
-                  um ambiente de trabalho seguro e saudável para todos. Na
-                  prática, você poderá aplicar a NR 7 da seguinte maneira: 
-                </p>
-                <ul class="body2">
-                  <li class="mb-16">
-                    entenda seus objetivos e requisitos; identifique os riscos
-                  </li>
-                  <li class="mb-16">presentes no seu ambiente de trabalho;</li>
-                  <li class="mb-16">
-                    colabore com os exames médicos ocupacionais e demais ações
-                    de saúde;
-                  </li>
-                  <li>
-                    siga as orientações do Programa de Controle Médico de Saúde
-                    Ocupacional (PCMSO) para manter hábitos saudáveis.
-                  </li>
-                </ul>
-                <p class="body2">
-                  No decorrer do curso, você aprenderá mais sobre cada um
-                  desses pontos.
-                </p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
       </div>
+      <div id="content">
+        <!-- Sidebar ---------------------------------- -->
+        <sidebar></sidebar>
 
-      <!-- NR7 ------------------------------------>
-      <div id="nr7" class="scrollspy pt-80">
-        <div class="container">
-          <h1 class="blue-deep-text mb-32 center-align" data-aos="fade-up">O que é a NR7?</h1>
+        <!-- Navbar ---------------------------------- -->
+        <navbar></navbar>
 
-          <div class="row">
-            <div class="col m4 s12">
-              <div class="card" data-aos="fade-up" data-aos-delay="250">
-                <div class="card-image activator">
-                  <img
-                    src="src/img/aula/static-03.webp"
-                    loading="lazy"
-                    alt="Mulher sorridente"
-                  />
-                  <div
-                    class="activator waves-effect waves-light"
-                    style="
-                      position: absolute;
-                      top: 0;
-                      bottom: 0;
-                      right: 0;
-                      left: 0;
-                    "
-                  ></div>
-                </div>
-                <div class="card-content activator">
-                  <span
-                    class="card-title activator blue-light-text flex--justify-between"
-                  >
-                    <h5>O que é a NR7?</h5>
+        <!-- Hero Banner ---------------------------------- -->
+        <hero
+          >A importância da NR 7 para a saúde e segurança do trabalhador</hero
+        >
+        <div style="height: 24px; width: 100%; background-color: #57bdbc"></div>
 
-                    <span class="material-symbols-rounded"> arrow_upward </span>
-                  </span>
-                </div>
-                <div class="card-reveal">
-                  <span
-                    class="card-title blue-light-text flex--justify-between"
-                  >
-                    <h5>O que é a NR7?</h5>
-                    <span class="material-symbols-rounded"> close </span>
-                  </span>
-
-                  <p>
-                    A Norma Regulamentadora nº 7 (NR 7) é uma regra estabelecida
-                    pelo Ministério do Trabalho que visa orientar como as
-                    empresas devem cuidar da saúde dos trabalhadores em relação
-                    aos riscos ocupacionais presentes no ambiente de trabalho.
+        <!-- introduçao ------------------------------------>
+        <div
+          id="introducao"
+          class="scrollspy py-144 py-80-mobile bg-blue-light"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col l6"></div>
+              <div class="col l6 s12">
+                <h1 class="blue-deep-text mb-32" data-aos="fade-up">
+                  Introdução
+                </h1>
+                <div class="white-text">
+                  <h3>
+                    É importante que você compreenda os impactos da Norma
+                    Regulamentadora nº 7 (NR 7) no seu dia a dia, porque ela
+                    busca preservar a sua saúde e a sua integridade física e
+                    mental. 
+                  </h3>
+                  <p class="body2">
+                    Ao aprender sobre ela, você poderá compartilhar sua
+                    importância com os demais colegas de trabalho e proporcionar
+                    um ambiente de trabalho seguro e saudável para todos. Na
+                    prática, você poderá aplicar a NR 7 da seguinte maneira: 
                   </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col m4 s12">
-              <div class="card" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-image activator">
-                  <img
-                    src="src/img/aula/static-04.webp"
-                    loading="lazy"
-                    alt="Milher sorridente"
-                  />
-                  <div
-                    class="activator waves-effect waves-light"
-                    style="
-                      position: absolute;
-                      top: 0;
-                      bottom: 0;
-                      right: 0;
-                      left: 0;
-                    "
-                  ></div>
-                </div>
-                <div class="card-content activator">
-                  <span
-                    class="card-title activator blue-light-text flex--justify-between"
-                  >
-                    <h5>Quem participa?</h5>
-
-                    <span class="material-symbols-rounded"> arrow_upward </span>
-                  </span>
-                </div>
-                <div class="card-reveal">
-                  <span
-                    class="card-title blue-light-text flex--justify-between"
-                  >
-                    <h5>Quem participa?</h5>
-                    <span class="material-symbols-rounded"> close </span>
-                  </span>
-
-                  <p>
-                    É uma norma que é escrita com a participação das empresas,
-                    dos trabalhadores e do governo, em formato tripartite.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col m4 s12">
-              <div class="card" data-aos="fade-up" data-aos-delay="350">
-                <div class="card-image activator">
-                  <img
-                    src="src/img/aula/static-05.webp"
-                    loading="lazy"
-                    alt="Homem no consultório"
-                  />
-                  <div
-                    class="waves-effect waves-light"
-                    style="
-                      position: absolute;
-                      top: 0;
-                      bottom: 0;
-                      right: 0;
-                      left: 0;
-                    "
-                  ></div>
-                </div>
-                <div class="card-content activator">
-                  <span
-                    class="card-title activator blue-light-text flex--justify-between"
-                  >
-                    <h5>Objetivo</h5>
-
-                    <span class="material-symbols-rounded"> arrow_upward </span>
-                  </span>
-                </div>
-                <div class="card-reveal">
-                  <span
-                    class="card-title blue-light-text flex--justify-between"
-                  >
-                    <h5>Objetivo</h5>
-                    <span class="material-symbols-rounded"> close </span>
-                  </span>
-
-                  <p>
-                    Ela estabelece diretrizes e requisitos para o
-                    desenvolvimento do Programa de Controle Médico de Saúde
-                    Ocupacional (PCMSO) nas organizações, com o objetivo de
-                    proteger e preservar a saúde de seus empregados em relação
-                    aos riscos ocupacionais, conforme avaliação de riscos do
-                    Programa de Gerenciamento de Risco (PGR) da organização.
+                  <ul class="body2">
+                    <li class="mb-16">
+                      entenda seus objetivos e requisitos; identifique os riscos
+                    </li>
+                    <li class="mb-16">
+                      presentes no seu ambiente de trabalho;
+                    </li>
+                    <li class="mb-16">
+                      colabore com os exames médicos ocupacionais e demais ações
+                      de saúde;
+                    </li>
+                    <li>
+                      siga as orientações do Programa de Controle Médico de
+                      Saúde Ocupacional (PCMSO) para manter hábitos saudáveis.
+                    </li>
+                  </ul>
+                  <p class="body2">
+                    No decorrer do curso, você aprenderá mais sobre cada um
+                    desses pontos.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Evolucao NR7 ------------------------------------>
-      <div id="evolucao" class="scrollspy">
-        <div class="bg-blue-deep mt-80 py-80 white-text center-align">
-          <div class="container--medium">
-            <h1 class="white-text center align mb-32" data-aos="fade-up">Evolução da NR7</h1>
-            <h3>
-              Desde o início da NR 7, em 1978, até os dias de hoje, muita coisa
-              se alterou. Porém, todas as mudanças tiveram como objetivo
-              melhorar a saúde do trabalhador.  
-            </h3>
-            <br />
-            <h3>Veja um pouco dessas mudanças:</h3>
-          </div>
-        </div>
-
-        <div class="container--medium">
-          <div class="timeline py-80">
-            <div class="container-t left-t" data-aos="fade-up">
-              <div class="content-t p-40">
-                <h4 class="blue-light-text mb-24">1978</h4>
-                <h5 class="blue-deep-text">
-                  Portaria MTb nº 3.214, de 8 de junho de 1978 – NR 7
-                </h5>
-
-                <p>
-                  Exames médicos (1978 – todo empregado passou a ter direito a
-                  fazer exames médicos periodicamente).
-                </p>
-                <a class="blue-green-text" href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/1978/portaria_3-214_aprova_as_nrs.pdf">Acesse</a>
-              </div>
-            </div>
-            <div class="container-t right-t" data-aos="fade-up">
-              <div class="content-t p-40">
-                <h4 class="blue-light-text mb-24">1994</h4>
-                <h5 class="blue-deep-text">
-                  Portaria SSST nº 24, de 29 de dezembro de 1994 – NR 7
-                </h5>
-
-                <p>
-                  Programa de Controle Médico de Saúde Ocupacional (promoção e
-                  preservação da saúde dos trabalhadores) Esta alteração foi um
-                  marco, trazendo o aspecto gerencial sobre a saúde da população
-                  de trabalhadores e não somente do indivíduo.
-                </p>
-                <a class="blue-green-text" href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/1994/portaria_24_aprova_nr_07_e_altera_nr_28-doc.pdf">Acesse</a>
-              </div>
-            </div>
-            <div class="container-t left-t" data-aos="fade-up">
-              <div class="content-t p-40">
-                <h4 class="blue-light-text mb-24">1998</h4>
-                <h5 class="blue-deep-text">
-                  Portaria SSST nº 19, de 9 de abril de 1998
-                </h5>
-
-                <p>
-                  Esta alteração foi relevante, com a inclusão de diretrizes do
-                  controle da audição – Anexo I – Programa de Conservação
-                  Auditiva
-                </p>
-                <a class="blue-green-text" href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/1998/portaria_19_altera_nr_7.pdf">Acesse</a>
-              </div>
-            </div>
-            <div class="container-t right-t" data-aos="fade-up">
-              <div class="content-t p-40">
-                <h4 class="blue-light-text mb-24">2011</h4>
-                <h5 class="blue-deep-text">
-                  Portaria SIT nº 223, de 6 de maio de 2011
-                </h5>
-
-                <p>
-                  Alteração relevante, com a introdução de regras para controle
-                  – Anexo II de interpretação de radiografias de tórax
-                </p>
-                <a class="blue-green-text" href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2011/portaria_223_altera_a_nr_07_anexo_ii_do_quadro_ii.pdf">Acesse</a>
-              </div>
-            </div>
-            <div class="container-t left-t" data-aos="fade-up">
-              <div class="content-t p-40">
-                <h4 class="blue-light-text mb-24">2020</h4>
-                <h5 class="blue-deep-text">
-                  Portaria SEPRT nº 6.734, de 9 de março de 2020
-                </h5>
-
-                <p>
-                  Publicação da NR 7 atual, com grandes melhorias em relação à
-                  gestão da saúde e qualidade técnica de controle médico
-                </p>
-                <a class="blue-green-text" href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2020/portaria_seprt_6-734_-altera_a_nr_07.pdf">Acesse</a>
-              </div>
-            </div>
-            <div class="container-t right-t" data-aos="fade-up">
-              <div class="content-t p-40">
-                <h4 class="blue-light-text mb-24">2021</h4>
-                <h5 class="blue-deep-text">
-                  Portaria SEPRT nº 1.295, de 2 de fevereiro de 2021
-                </h5>
-                <p>
-                  Apenas prorrogou a data de  início da nova NR 7 para 2 de
-                  agosto de 2021
-                </p>
-                <h5 class="blue-deep-text mt-24">
-                  Portaria SEPRT nº 8.873, de 23 de julho de 2021
-                </h5>
-                <p>
-                  Novamente prorrogada para início em 3 de janeiro de 2022,
-                  estando vigente desde então
-                </p>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel ------------------------------------>
-      <div id="PCMSO" class="scrollspy">
-        <div class="container">
-          <carousel-sst></carousel-sst>
-        </div>
-      </div>
-
-      <!-- Controle ------------------------------------>
-
-      <div id="controle" class="scrollspy">
-        <div class="container--medium mt-80">
-          <h1 class="blue-deep-text mb-32 center-align" data-aos="fade-up">
-            Controle médico de algumas exposições
-          </h1>
-          <h5 class="center-align">
-            Alguns riscos ocupacionais têm na NR 7 a determinação de como a
-            vigilância deve ser feita através de exames complementares:
-          </h5>
-
-          <ul class="customCollection left-align">
-            <li
-              class="card card--purple-shadow collection-item avatar mb-24 p-16"
-              data-aos="fade-up"
-            >
-              <img
-                src="src/img/aula/collection-01.webp"
-                loading="lazy"
-                alt="Indústria"
-                class="mr-24 square mb-16-mobile"
-              />
-              <div>
-                <h5 class="customCollection__title blue-deep-text">
-                  Exposição de produtos químicos
-                </h5>
-
-                <p>
-                  Quando há exposição a alguns produtos químicos, é necessária a
-                  realização de exames de urina a cada seis meses;
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="card card--purple-shadow collection-item avatar mb-24 p-16"
-              data-aos="fade-up"
-            >
-              <img
-                src="src/img/aula/collection-02.webp"
-                loading="lazy"
-                alt="Indústria"
-                class="mr-24 square mb-16-mobile"
-              />
-              <div>
-                <h5 class="customCollection__title blue-deep-text">
-                  Exposição a poeiras e minerais
-                </h5>
-
-                <p>
-                  A exposição a poeiras minerais demanda a realização de raios x
-                  de tórax e do exame de espirometria periodicamente, entre
-                  um e três anos, dependendo da intensidade da poeira no
-                  ambiente;
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="card card--purple-shadow collection-item avatar mb-24 p-16 flex--align-center"
-              data-aos="fade-up"
-            >
-              <img
-                src="src/img/aula/collection-03.webp"
-                loading="lazy"
-                alt="Indústria"
-                class="mr-24 square mb-16-mobile"
-              />
-              <div>
-                <h5 class="customCollection__title blue-deep-text">
-                  Exposição a produtos químicos cancerígenos
-                </h5>
-
-                <p>
-                  A exposição a produtos químicos cancerígenos demanda a
-                  realização de exames específicos, mesmo em baixa intensidade
-                  no ambiente;
-                </p>
-              </div>
-            </li>
-
-            <li
-              class="card card--purple-shadow collection-item avatar mb-24 p-16 flex--align-center"
-              data-aos="fade-up"
-            >
-              <img
-                src="src/img/aula/collection-06.webp"
-                loading="lazy"
-                alt="Indústria"
-                class="mr-24 square mb-16-mobile"
-              />
-              <div>
-                <h5 class="customCollection__title blue-deep-text">
-                  Exposição ao ruído
-                </h5>
-
-                <p>
-                  A exposição ao ruído demanda controle da audição através do
-                  exame de audiometria no mínimo a cada ano.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="atestado" class="bg-blue-deep pt-80 mt-80 scrollspy">
-        <!-- Atestado ------------------------------------>
-        <div >
-          <div class="container--medium">
-            <h1 class="white-text mb-32 center-align" data-aos="fade-up">
-              Atestado de saúde ocupacional
+        <!-- NR7 ------------------------------------>
+        <div id="nr7" class="scrollspy pt-80">
+          <div class="container">
+            <h1 class="blue-deep-text mb-32 center-align" data-aos="fade-up">
+              O que é a NR7?
             </h1>
-            <img
-              style="width: 100%"
-              src="src/img/aula/static-06.webp"
-              loading="lazy"
-            />
 
-            <ul class="collapsible mt-40">
-              <li>
-                <div class="collapsible-header">
-                  <h5>Principal função</h5>
+            <div class="row">
+              <div class="col m4 s12">
+                <div class="card" data-aos="fade-up" data-aos-delay="250">
+                  <div class="card-image activator">
+                    <img
+                      src="src/img/aula/static-03.webp"
+                      loading="lazy"
+                      alt="Mulher sorridente"
+                    />
+                    <div
+                      class="activator waves-effect waves-light"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                      "
+                    ></div>
+                  </div>
+                  <div class="card-content activator">
+                    <span
+                      class="card-title activator blue-light-text flex--justify-between"
+                    >
+                      <h5>O que é a NR7?</h5>
+
+                      <span class="material-symbols-rounded">
+                        arrow_upward
+                      </span>
+                    </span>
+                  </div>
+                  <div class="card-reveal">
+                    <span
+                      class="card-title blue-light-text flex--justify-between"
+                    >
+                      <h5>O que é a NR7?</h5>
+                      <span class="material-symbols-rounded"> close </span>
+                    </span>
+
+                    <p>
+                      A Norma Regulamentadora nº 7 (NR 7) é uma regra
+                      estabelecida pelo Ministério do Trabalho que visa orientar
+                      como as empresas devem cuidar da saúde dos trabalhadores
+                      em relação aos riscos ocupacionais presentes no ambiente
+                      de trabalho.
+                    </p>
+                  </div>
                 </div>
-                <div class="collapsible-body">
+              </div>
+
+              <div class="col m4 s12">
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card-image activator">
+                    <img
+                      src="src/img/aula/static-04.webp"
+                      loading="lazy"
+                      alt="Milher sorridente"
+                    />
+                    <div
+                      class="activator waves-effect waves-light"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                      "
+                    ></div>
+                  </div>
+                  <div class="card-content activator">
+                    <span
+                      class="card-title activator blue-light-text flex--justify-between"
+                    >
+                      <h5>Quem participa?</h5>
+
+                      <span class="material-symbols-rounded">
+                        arrow_upward
+                      </span>
+                    </span>
+                  </div>
+                  <div class="card-reveal">
+                    <span
+                      class="card-title blue-light-text flex--justify-between"
+                    >
+                      <h5>Quem participa?</h5>
+                      <span class="material-symbols-rounded"> close </span>
+                    </span>
+
+                    <p>
+                      É uma norma que é escrita com a participação das empresas,
+                      dos trabalhadores e do governo, em formato tripartite.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col m4 s12">
+                <div class="card" data-aos="fade-up" data-aos-delay="350">
+                  <div class="card-image activator">
+                    <img
+                      src="src/img/aula/static-05.webp"
+                      loading="lazy"
+                      alt="Homem no consultório"
+                    />
+                    <div
+                      class="waves-effect waves-light"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                      "
+                    ></div>
+                  </div>
+                  <div class="card-content activator">
+                    <span
+                      class="card-title activator blue-light-text flex--justify-between"
+                    >
+                      <h5>Objetivo</h5>
+
+                      <span class="material-symbols-rounded">
+                        arrow_upward
+                      </span>
+                    </span>
+                  </div>
+                  <div class="card-reveal">
+                    <span
+                      class="card-title blue-light-text flex--justify-between"
+                    >
+                      <h5>Objetivo</h5>
+                      <span class="material-symbols-rounded"> close </span>
+                    </span>
+
+                    <p>
+                      Ela estabelece diretrizes e requisitos para o
+                      desenvolvimento do Programa de Controle Médico de Saúde
+                      Ocupacional (PCMSO) nas organizações, com o objetivo de
+                      proteger e preservar a saúde de seus empregados em relação
+                      aos riscos ocupacionais, conforme avaliação de riscos do
+                      Programa de Gerenciamento de Risco (PGR) da organização.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evolucao NR7 ------------------------------------>
+        <div id="evolucao" class="scrollspy">
+          <div class="bg-blue-deep mt-80 py-80 white-text center-align">
+            <div class="container--medium">
+              <h1 class="white-text center align mb-32" data-aos="fade-up">
+                Evolução da NR7
+              </h1>
+              <h3>
+                Desde o início da NR 7, em 1978, até os dias de hoje, muita
+                coisa se alterou. Porém, todas as mudanças tiveram como objetivo
+                melhorar a saúde do trabalhador.  
+              </h3>
+              <br />
+              <h3>Veja um pouco dessas mudanças:</h3>
+            </div>
+          </div>
+
+          <div class="container--medium">
+            <div class="timeline py-80">
+              <div class="container-t left-t" data-aos="fade-up">
+                <div class="content-t p-40">
+                  <h4 class="blue-light-text mb-24">1978</h4>
+                  <h5 class="blue-deep-text">
+                    Portaria MTb nº 3.214, de 8 de junho de 1978 – NR 7
+                  </h5>
+
                   <p>
-                    O exame ocupacional é a principal ferramenta do médico do
-                    trabalho.
+                    Exames médicos (1978 – todo empregado passou a ter direito a
+                    fazer exames médicos periodicamente).
                   </p>
+                  <a
+                    class="blue-green-text btn text"
+                    target="_blank"
+                    href="https://1drv.ms/b/s!AueqWwwXGYMpcabnmy4s-evroM8?e=XnDeAi"
+                  >
+                    Acesse
+                    <span class="material-symbols-rounded"> open_in_new </span>
+                  </a>
+                </div>
+              </div>
+              <div class="container-t right-t" data-aos="fade-up">
+                <div class="content-t p-40">
+                  <h4 class="blue-light-text mb-24">1994</h4>
+                  <h5 class="blue-deep-text">
+                    Portaria SSST nº 24, de 29 de dezembro de 1994 – NR 7
+                  </h5>
+
                   <p>
-                    Como demonstrado, é importante que todas as questões de
-                    saúde relacionada ao trabalho e aos hábitos de vida sejam
-                    pesquisadas pelo médico e informadas de forma fidedigna pelo
-                    trabalhador.
+                    Programa de Controle Médico de Saúde Ocupacional (promoção e
+                    preservação da saúde dos trabalhadores) Esta alteração foi
+                    um marco, trazendo o aspecto gerencial sobre a saúde da
+                    população de trabalhadores e não somente do indivíduo.
+                  </p>
+                  <a
+                    class="blue-green-text btn text"
+                    target="_blank"
+                    href="https://1drv.ms/b/s!AueqWwwXGYMpcHShyJleyBuKphs?e=or2FUs"
+                    >Acesse
+                    <span class="material-symbols-rounded"> open_in_new </span>
+                  </a>
+                </div>
+              </div>
+              <div class="container-t left-t" data-aos="fade-up">
+                <div class="content-t p-40">
+                  <h4 class="blue-light-text mb-24">1998</h4>
+                  <h5 class="blue-deep-text">
+                    Portaria SSST nº 19, de 9 de abril de 1998
+                  </h5>
+
+                  <p>
+                    Esta alteração foi relevante, com a inclusão de diretrizes
+                    do controle da audição – Anexo I – Programa de Conservação
+                    Auditiva
+                  </p>
+                  <a
+                    class="blue-green-text btn text"
+                    target="_blank"
+                    href="https://1drv.ms/b/s!AueqWwwXGYMpbtaW-A0ePYpOReI?e=0tevzi"
+                    >Acesse
+                    <span class="material-symbols-rounded"> open_in_new </span>
+                  </a>
+                </div>
+              </div>
+              <div class="container-t right-t" data-aos="fade-up">
+                <div class="content-t p-40">
+                  <h4 class="blue-light-text mb-24">2011</h4>
+                  <h5 class="blue-deep-text">
+                    Portaria SIT nº 223, de 6 de maio de 2011
+                  </h5>
+
+                  <p>
+                    Alteração relevante, com a introdução de regras para
+                    controle – Anexo II de interpretação de radiografias de
+                    tórax
+                  </p>
+                  <a
+                    class="blue-green-text btn text"
+                    target="_blank"
+                    href="https://1drv.ms/b/s!AueqWwwXGYMpbauL1L7Ehoiuq-s?e=PMGXOy"
+                    >Acesse
+                    <span class="material-symbols-rounded"> open_in_new </span>
+                  </a>
+                </div>
+              </div>
+              <div class="container-t left-t" data-aos="fade-up">
+                <div class="content-t p-40">
+                  <h4 class="blue-light-text mb-24">2020</h4>
+                  <h5 class="blue-deep-text">
+                    Portaria SEPRT nº 6.734, de 9 de março de 2020
+                  </h5>
+
+                  <p>
+                    Publicação da NR 7 atual, com grandes melhorias em relação à
+                    gestão da saúde e qualidade técnica de controle médico
+                  </p>
+                  <a
+                    class="blue-green-text btn text"
+                    target="_blank"
+                    href="https://1drv.ms/b/s!AueqWwwXGYMpb2uTKKgNMzd9WF8?e=sb6vd9"
+                    >Acesse
+                    <span class="material-symbols-rounded"> open_in_new </span>
+                  </a>
+                </div>
+              </div>
+              <div class="container-t right-t" data-aos="fade-up">
+                <div class="content-t p-40">
+                  <h4 class="blue-light-text mb-24">2021</h4>
+                  <h5 class="blue-deep-text">
+                    Portaria SEPRT nº 1.295, de 2 de fevereiro de 2021
+                  </h5>
+                  <p>
+                    Apenas prorrogou a data de  início da nova NR 7 para 2 de
+                    agosto de 2021
+                  </p>
+                  <h5 class="blue-deep-text mt-24">
+                    Portaria SEPRT nº 8.873, de 23 de julho de 2021
+                  </h5>
+                  <p>
+                    Novamente prorrogada para início em 3 de janeiro de 2022,
+                    estando vigente desde então
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel ------------------------------------>
+        <div id="PCMSO" class="scrollspy">
+          <div class="container">
+            <carousel-sst></carousel-sst>
+          </div>
+        </div>
+
+        <!-- Controle ------------------------------------>
+        <div id="controle" class="scrollspy">
+          <div class="container--medium mt-80">
+            <h1 class="blue-deep-text mb-32 center-align" data-aos="fade-up">
+              Controle médico de algumas exposições
+            </h1>
+            <h5 class="center-align">
+              Alguns riscos ocupacionais têm na NR 7 a determinação de como a
+              vigilância deve ser feita através de exames complementares:
+            </h5>
+
+            <ul class="customCollection left-align">
+              <li
+                class="card card--purple-shadow collection-item avatar mb-24 p-16"
+                data-aos="fade-up"
+              >
+                <img
+                  src="src/img/aula/collection-01.webp"
+                  loading="lazy"
+                  alt="Indústria"
+                  class="mr-24 square mb-16-mobile"
+                />
+                <div>
+                  <h5 class="customCollection__title blue-deep-text">
+                    Exposição de produtos químicos
+                  </h5>
+
+                  <p>
+                    Quando há exposição a alguns produtos químicos, é necessária
+                    a realização de exames de urina a cada seis meses;
                   </p>
                 </div>
               </li>
-              <li>
-                <div class="collapsible-header">
-                  <h5>Atestado de Saúde Ocupacional (ASO)</h5>
-                </div>
-                <div class="collapsible-body">
+
+              <li
+                class="card card--purple-shadow collection-item avatar mb-24 p-16"
+                data-aos="fade-up"
+              >
+                <img
+                  src="src/img/aula/collection-02.webp"
+                  loading="lazy"
+                  alt="Indústria"
+                  class="mr-24 square mb-16-mobile"
+                />
+                <div>
+                  <h5 class="customCollection__title blue-deep-text">
+                    Exposição a poeiras e minerais
+                  </h5>
+
                   <p>
-                    A cada exame ocupacional, o trabalhador deve receber o
-                    Atestado de Saúde Ocupacional (ASO).
-                  </p>
-                  <p>
-                    Nesse atestado estarão registrados os riscos ocupacionais
-                    aos quais o trabalhador está exposto, os exames que foram
-                    realizados e a definição de aptidão.
+                    A exposição a poeiras minerais demanda a realização de raios
+                    x de tórax e do exame de espirometria periodicamente, entre
+                    um e três anos, dependendo da intensidade da poeira no
+                    ambiente;
                   </p>
                 </div>
               </li>
-              <li>
-                <div class="collapsible-header">
 
-                  <h5>Aptidão</h5>
-                </div>
-                <div class="collapsible-body">
+              <li
+                class="card card--purple-shadow collection-item avatar mb-24 p-16 flex--align-center"
+                data-aos="fade-up"
+              >
+                <img
+                  src="src/img/aula/collection-03.webp"
+                  loading="lazy"
+                  alt="Indústria"
+                  class="mr-24 square mb-16-mobile"
+                />
+                <div>
+                  <h5 class="customCollection__title blue-deep-text">
+                    Exposição a produtos químicos cancerígenos
+                  </h5>
+
                   <p>
-                    A aptidão, ou apto no ASO, significa que o trabalhador pode
-                    exercer a atividade de trabalho sem risco de adoecimento ou
-                    agravamento de doenças que porventura
+                    A exposição a produtos químicos cancerígenos demanda a
+                    realização de exames específicos, mesmo em baixa intensidade
+                    no ambiente;
+                  </p>
+                </div>
+              </li>
+
+              <li
+                class="card card--purple-shadow collection-item avatar mb-24 p-16 flex--align-center"
+                data-aos="fade-up"
+              >
+                <img
+                  src="src/img/aula/collection-06.webp"
+                  loading="lazy"
+                  alt="Indústria"
+                  class="mr-24 square mb-16-mobile"
+                />
+                <div>
+                  <h5 class="customCollection__title blue-deep-text">
+                    Exposição ao ruído
+                  </h5>
+
+                  <p>
+                    A exposição ao ruído demanda controle da audição através do
+                    exame de audiometria no mínimo a cada ano.
                   </p>
                 </div>
               </li>
@@ -561,12 +556,77 @@
           </div>
         </div>
 
-        <!-- Concluir ---------------------------------- -->
-        <concluir></concluir>
-      </div>
-      <!-- Footer ---------------------------------- -->
+        <!-- atestado ------------------------------------>
+        <div id="atestado" class="bg-blue-deep pt-80 mt-80 scrollspy">
+          <!-- Atestado ------------------------------------>
+          <div>
+            <div class="container--medium">
+              <h1 class="white-text mb-32 center-align" data-aos="fade-up">
+                Atestado de saúde ocupacional
+              </h1>
+              <img
+                style="width: 100%"
+                src="src/img/aula/static-06.webp"
+                loading="lazy"
+              />
 
-      <app-footer></app-footer>
+              <ul class="collapsible mt-40">
+                <li>
+                  <div class="collapsible-header">
+                    <h5>Principal função</h5>
+                  </div>
+                  <div class="collapsible-body">
+                    <p>
+                      O exame ocupacional é a principal ferramenta do médico do
+                      trabalho.
+                    </p>
+                    <p>
+                      Como demonstrado, é importante que todas as questões de
+                      saúde relacionada ao trabalho e aos hábitos de vida sejam
+                      pesquisadas pelo médico e informadas de forma fidedigna
+                      pelo trabalhador.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <h5>Atestado de Saúde Ocupacional (ASO)</h5>
+                  </div>
+                  <div class="collapsible-body">
+                    <p>
+                      A cada exame ocupacional, o trabalhador deve receber o
+                      Atestado de Saúde Ocupacional (ASO).
+                    </p>
+                    <p>
+                      Nesse atestado estarão registrados os riscos ocupacionais
+                      aos quais o trabalhador está exposto, os exames que foram
+                      realizados e a definição de aptidão.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <h5>Aptidão</h5>
+                  </div>
+                  <div class="collapsible-body">
+                    <p>
+                      A aptidão, ou apto no ASO, significa que o trabalhador
+                      pode exercer a atividade de trabalho sem risco de
+                      adoecimento ou agravamento de doenças que porventura
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Concluir ---------------------------------- -->
+          <concluir></concluir>
+        </div>
+
+        <!-- Footer ------------------------------------>
+        <app-footer></app-footer>
+      </div>
     </div>
   </body>
 </html>

@@ -17,14 +17,10 @@
 // Concluir
 @import "custom-components/concluir";
 
-// Img Side Card
-@import "custom-components/img-side-card";
 
 // Collections
 @import "custom-components/custom-collections";
 
-// Box Attention
-@import "custom-components/box-attention";
 
 // Carousel
 @import "custom-components/carousel-sst";
@@ -35,13 +31,9 @@
 // Helpers
 @import "custom-components/helpers";
 
-// full-img-legend
-@import "custom-components/full-img-legend";
-
-@import "custom-components/questions";
-
 @import "custom-components/timeline";
 
+@import "custom-components/loading";
 
 // Geral ------------------------------------
 
@@ -98,20 +90,19 @@ u {
 // Tratamento Aula específica
 // ------------------------------------
 
-
-.collapsible{
+.collapsible {
   box-shadow: none;
   background-color: white;
-  .collapsible-header{
+  .collapsible-header {
     color: var(--text-gray);
   }
 }
 
 .bg-blue-deep {
-z-index: -1;}
+  z-index: -1;
+}
 
-
-#introducao{
+#introducao {
   background-image: url("../img/aula/static-02.webp");
 
   background-position: 0% 0%;
@@ -122,22 +113,18 @@ z-index: -1;}
     background-position: -300px top;
   }
 
-
   @media screen and (max-width: 1150px) {
     background-position: -380px top;
   }
 
   @media screen and (max-width: 992px) {
     background-image: none;
-
   }
-
-
 }
-.collapsible-header{
+.collapsible-header {
   position: relative;
 }
-.collapsible-header::after{
+.collapsible-header::after {
   width: 50px;
   position: absolute;
   right: 16px;
@@ -145,3 +132,4 @@ z-index: -1;}
   top: 10px;
   color: #44afd2;
 }
+
