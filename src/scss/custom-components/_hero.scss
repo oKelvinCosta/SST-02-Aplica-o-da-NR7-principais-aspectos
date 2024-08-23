@@ -1,0 +1,66 @@
+$hero-desktop: "../img/aula/Hero.webp";
+$hero-tablet: "../img/aula/Hero-s.webp";
+
+#hero {
+  background-size: contain;
+  background-position: 100% top;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+
+  .badge {
+    background-color: var(--blue-green);
+    color: white;
+    padding: 6px 12px 4px 12px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 0px #00000024;
+    display: inline-block;
+  }
+
+  @include desktop {
+    // background-image: url("../img/aula/Hero.webp");
+    height: 764px;
+
+    background-image: url(#{$hero-desktop});
+  }
+  /* Media queries - Responsive timeline on screens less than 1400px wide */
+  @media screen and (max-width: 1400px) {
+    background-position: 140% top;
+  }
+  @media screen and (max-width: 1280px) {
+    .display1 {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    background-position: 200% top;
+  }
+
+  @include tablet-only {
+    height: 400px;
+    background-image: url(#{$hero-tablet});
+    background-position: 100% top !important;
+  }
+  @media screen and (max-width: 768px) {
+    background-position: 130% top !important;
+  }
+  @media screen and (max-width: 660px) {
+    background-position: 145% top !important;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    padding-bottom: 0;
+    align-items: flex-start;
+    .mobile-hero {
+      display: block;
+      width: 100%;
+      margin-top: 80px;
+    }
+  }
+}

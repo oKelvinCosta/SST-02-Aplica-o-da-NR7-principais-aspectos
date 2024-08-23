@@ -1,0 +1,72 @@
+// Card
+// Dependendo do modificador, aplica uma cor diferente
+.card {
+  border-radius: 2px;
+  box-shadow: 0px 2px 10px 0px #E8E8E8;
+
+
+  .card-image img,
+  .img--round {
+    // border-radius: 2px;
+  }
+
+  .card-title {
+    font-size: 1.13em;
+    font-family: $font-stack;
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 150%;
+  }
+}
+.activator{
+  cursor: pointer;
+}
+
+
+.h-xl {
+  height: 670px;
+}
+.h-l {
+  height: 500px;
+}
+.h-m {
+  height: 340px;
+}
+.h-s {
+  height: 200px;
+}
+@include mobile {
+  .h-xl {
+    height: 570px;
+  }
+  .h-l {
+    height: 400px;
+  }
+  .h-m {
+    height: 340px;
+  }
+  .h-s {
+    height: 200px;
+  }
+}
+
+.w-80 {
+  width: 80%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-30 {
+  width: 30%;
+}

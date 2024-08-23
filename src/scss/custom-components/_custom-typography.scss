@@ -1,0 +1,135 @@
+html {
+  // line-height: 1.5;
+
+  // Responsividade de coisas relacionadas a REM
+  @media only screen and (min-width: 0) {
+    font-size: 13.5px;
+  }
+
+  @media only screen and (min-width: $medium-screen-up) {
+    font-size: 16px;
+  }
+
+  font-family: $font-stack;
+  color: $text-color;
+}
+
+body {
+  background-color: var(--md-sys-color-background);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+blockquote {
+  font-family: $font-stack;
+}
+b {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: $h1-fontsize;
+
+  font-style: italic;
+  font-weight: 500;
+  line-height: 41px;
+}
+h2 {
+  font-size: $h2-fontsize;
+
+  font-style: italic;
+  font-weight: 500;
+  line-height: 36px;
+}
+h3 {
+  font-size: $h3-fontsize;
+
+  font-style: italic;
+  font-weight: 500;
+  line-height: 32px;
+}
+h4 {
+  font-size: $h4-fontsize;
+
+  font-style: italic;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+}
+h5 {
+  font-size: $h5-fontsize;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0015em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0;
+  font-style: italic;
+}
+
+h2,
+h3,
+h5 {
+  font-weight: 500;
+}
+
+// @media #{$small-and-down} {
+//   .display1 {
+//     font-size: 3.875rem;
+//   }
+//   h1 {
+//     font-size: 3rem;
+//   }
+//   h2 {
+//     font-size: 2.6rem;
+//   }
+//   h3 {
+//     font-size: 2rem;
+//   }
+// }
+
+p {
+  line-height: 150%;
+  font-size: $default-fontsize;
+  font-weight: 300;
+
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.display1 {
+  font-size: $display1-fontsize;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 61px;
+  letter-spacing: 0.0025em;
+}
+.display2 {
+  font-size: $display2-fontsize;
+  font-weight: 600;
+  line-height: 52px;
+}
+.body2 {
+  font-size: $body2-fontsize;
+
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.0125em;
+}

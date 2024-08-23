@@ -1,0 +1,165 @@
+// Importar variáveis padrões
+@import "../components/variables";
+
+// Arquivo Geral para variáveis
+
+// Sobrescrever com minhas variáveis
+
+// Tipografia ------------------------------------
+$font-stack: canada-type-gibson, "Roboto", "Helvetica Neue", sans-serif;
+
+// Display
+$display1-fontsize: 3.8125em; // 61px
+$display2-fontsize: 2.8125em; // 45px
+
+// Headline
+$h1-fontsize: 2.25em; // 36px
+$h2-fontsize: 1.75em; // 28px
+$h3-fontsize: 1.5em; // 24px
+
+// Title
+$h4-fontsize: 1.375em; // 22px
+$h5-fontsize: 1.125em; // 18px
+
+// Body
+$default-fontsize: 0.9375em; // 16px
+$body2-fontsize: 1.0625em; // 17px
+
+// texto cinza por padrao
+$text-color: #29353d;
+
+$border-radius-lg: 23px;
+
+$spacing-values: (
+  "0": 0,
+  "4": 0.25rem,
+  // 4px
+  "8": 0.5rem,
+  // 8px
+  "12": 0.75rem,
+  //12px
+  "16": 1rem,
+  // 16px
+  "24": 1.5rem,
+  // 24px
+  "32": 2rem,
+  // 32px
+  "40": 2.5rem,
+  // 40px
+  "48": 3rem,
+  // 48px
+  "60": 3.75rem,
+  // 60px
+  "80": 5rem,
+  // 80px
+  "96": 6rem,
+  // 96px
+  "144": 9rem,
+  // 144px
+  "184": 11.5rem,
+  // 184px
+  "240": 15rem,
+  // 240px
+  "288": 18rem,
+  // 288px
+  "auto": auto,
+);
+
+// Paleta de Cor ------------------------------------
+
+:root {
+  // Primárias
+  --blue-green: #57bdbc;
+  --blue-light: #44afd2;
+  --blue-deep: #0b66b0;
+
+  // Secundárias
+  --green-light: #9ec46d;
+  --green: #6fb480;
+  --orange: #e47252;
+  --yellow: #f5cb5a;
+
+  // Cor do texto
+  --text-color: #{$text-color};
+
+  --text-gray: #5C5C5C;
+
+  --gradient-blue-light-to-blue-green: linear-gradient(
+    to right,
+    #44afd2 0%,
+    #57bdbc 100%
+  );
+  --gradient-blue-green-to-blue-deep: linear-gradient(
+    to right,
+    #57bdbc 0%,
+    #0b66b0 100%
+  );
+  --gradient-blue-light-to-blue-deep: linear-gradient(
+    to right,
+    #44afd2 0%,
+    #0b66b0 100%
+  );
+}
+
+// para serem usadas nas variáveis do tokens.module.scss.
+// E funcionar com as cores dos compoenentes padrões
+:root {
+  // Cores precisam ser variáveis CSS, para poderem trocar seus valores dinamicamente
+
+  --md-source: #44afd2;
+  /* primary */
+  --md-ref-palette-primary50: #44afd2; /* Cor principal */
+
+  /* secondary */
+  --md-ref-palette-secondary50: #0b66b0; /* Cor principal */
+
+  /* tertiary */
+  --md-ref-palette-tertiary50: #57bdbc; /* Cor principal */
+
+  /* neutral */
+
+  --md-ref-palette-neutral50: #29353d; /* Cor principal */
+
+  // Variáveis de Cores para serem usadas
+
+  // tokens.module.scss ------------------------------------
+  // Pra funcionar troca de tema light/dark preciso usar as variáveis do theme.module.scss nos components !
+  // o theme.module.scss usa as cores dos tokens
+  // Logo, precisa alterar somente a cor dos tokens.
+  /* light */
+  --md-sys-color-primary-light: var(--md-ref-palette-primary50);
+  --md-sys-color-secondary-light: var(--md-ref-palette-secondary50);
+  --md-sys-color-tertiary-light: var(--md-ref-palette-tertiary50);
+  --md-sys-color-on-background-light: var(--md-ref-palette-neutral50);
+  --md-sys-color-background-light: #f9f9f9;
+}
+
+// Breakpoints ------------------------------------
+// Media Queries
+
+@mixin desktop {
+  // 992.99px e acima
+  @media #{$large-and-up} {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  // 992.99px e abaixo
+  @media #{$medium-only} {
+    @content;
+  }
+}
+@mixin tablet {
+  // 992.99px e abaixo
+  @media #{$medium-and-down} {
+    @content;
+  }
+}
+
+@mixin mobile {
+  // 600.99px e abaixo
+  @media #{$small-and-down} {
+    @content;
+  }
+}
