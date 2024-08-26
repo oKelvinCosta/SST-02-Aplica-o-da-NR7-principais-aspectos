@@ -45,11 +45,9 @@ $hero-tablet: "../img/aula/Hero-s.webp";
     background-position: 100% top !important;
   }
   @media screen and (max-width: 768px) {
-    background-position: 1770% top !important;
-  }
-  @media screen and (max-width: 660px) {
     background-position: 145% top !important;
   }
+
 
   @include mobile {
     display: flex;

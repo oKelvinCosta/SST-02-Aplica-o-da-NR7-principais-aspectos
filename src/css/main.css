@@ -12617,11 +12617,6 @@ nav .progress {
 }
 @media screen and (max-width: 768px) {
   #hero {
-    background-position: 1770% top !important;
-  }
-}
-@media screen and (max-width: 660px) {
-  #hero {
     background-position: 145% top !important;
   }
 }
