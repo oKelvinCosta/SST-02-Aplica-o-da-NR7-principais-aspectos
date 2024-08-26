@@ -7,6 +7,26 @@ import {
 export default {
   setup() {
     onMounted(() => {
+      // Scrollspy -------------------------------------
+      // para funcionar mobile no t2k e no geral
+      const menuItens = document.querySelectorAll(".sidenav a[href^='#']");
+
+      menuItens.forEach((link) => {
+        link.addEventListener("click", scrollToIdOnClick);
+      });
+
+      function scrollToIdOnClick(event) {
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute("href");
+        const to = document.querySelector(id).offsetTop;
+
+        window.scroll({
+          top: to - 60,
+          behavior: "smooth",
+        });
+      }
+
       // Use nextTick to ensure DOM updates are finished
       nextTick(() => {
         // Sidenav initialization
@@ -20,9 +40,8 @@ export default {
     return {};
   },
 
-  
-  template://html 
-  `
+  //html
+  template: `
 
   <ul id="slide-out" class="sidenav">
     <li class="mb-24">
