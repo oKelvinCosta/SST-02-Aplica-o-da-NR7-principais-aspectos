@@ -12,6 +12,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Node instalado
 - Npm instalado
+- Gulp instalado
 
 ## 🚀 Instalando na sua máquina
 
